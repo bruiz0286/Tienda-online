@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST["submit"])){ /* Si hay un name="submit" entonces quiere decir que entramos a la pag correcta (registro.php)*/ 
+if(isset($_POST["submit"])){ /* Si hay un name="submit" entonces quiere decir que entramos a la pag correcta (registro.php), sino: ver else de linea 44*/ 
    
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
@@ -27,12 +27,12 @@ if(isset($_POST["submit"])){ /* Si hay un name="submit" entonces quiere decir qu
         exit();
     }
 
-    if(pwdMatch($contrasena,$contrasenavrf) !== false){ /* No igual a false = error */
+    if(pwdMatch($contrasena,$contrasenavrf) !== false){ 
         header("location: ../registro.php?error=contrasenasnocoinciden");
         exit();
     }
 
-    if(uidExiste($conn, $usuario, $correo) !== false){ /* No igual a false = error */
+    if(uidExiste($conn, $usuario, $correo) !== false){ 
         header("location: ../registro.php?error=usuarioexistente");
         exit();
     }

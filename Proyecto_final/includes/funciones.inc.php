@@ -1,6 +1,7 @@
 <?php
 
 
+/* FUNCIONES DE PAGINA REGISTRO */
 function inputVacioRegistro($nombre,$correo,$usuario,$contrasena,$contrasenavrf){
     $resultado;
     
@@ -138,4 +139,24 @@ function loginUser($conn,$usuario,$contrasena){
         exit();
     }
 }
+
+
+
+/* FUNCIONES DE PAGINA PRODUCTO */
+
+/*
+function inputVacioProducto($producto,$talle,$cantidad){
+    $resultado;
+    
+    if(empty($producto) || empty($talle) || empty($cantidad))){
+        $resultado = true;
+    }
+    else{
+        $resultado = false;
+    }
+
+    return $resultado;
+}
+*/
+
 

@@ -14,8 +14,8 @@ include'header.php';
                     quasi aliquam eligendi dolores quidem ducimus vel repellendus atque quisquam, magnam 
                     vero, maxime odit vitae nisi quos saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur nesciunt id.
                     </p>
-                    <form class="formulario">
-                        <select class="formulario__producto">
+                    <form class="formulario" action="includes/producto.inc.php" method="POST">
+                        <select class="formulario__producto" name="producto">
                             <option disabled selected>-- Seleccionar Producto --</option>
                             <option>Cazadora doble faz</option>
                             <option>Cazadora acolchada capucha</option>
@@ -36,16 +36,24 @@ include'header.php';
                             <option>Blazer conjunto estructura cuadros (gris)</option>
                             <option>Blazer estructura lana</option>
                         </select>    
-                <form class="formulario">
-                    <select class="formulario__campo">
+                    <select class="formulario__campo" name="talle">
                         <option disabled selected>-- Seleccionar Talle --</option>
                         <option>S</option>
                         <option>M</option>
                         <option>L</option>
                         <option>XL</option>
                     </select>
-                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" max="10" >
-                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" max="10" name="cantidad" >
+                    <button class="formulario__submit" type="submit" name="submit">Agregar al carrito</button>
+                    <?php
+                if(isset($_GET["error"])){ /*Si hay un "error" en el url de la pagina voy a darle un mensaje de error */
+                    if($_GET["error"] == "inputvacio"){
+                        echo"<p class='error'>Llena todos los campos</p>";
+                    
+                    }               
+                }
+
+            ?>
                 </form>
             </div>
         </div>

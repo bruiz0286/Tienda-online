@@ -10,33 +10,26 @@ include'header.php';
         <div class="cont">
         
             <div class="input-contenedor">
-                <i class="fas fa-user icon"></i>
                 <input type="text" placeholder="Nombre Completo" name="nombre">  
             </div>
             
             <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
                 <input type="text" placeholder="Correo" name="correo">   
             </div>
             
             <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
                 <input type="text" placeholder="Usuario" name="uid">
             </div>
 
             <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
                 <input type="password" placeholder="Contraseña" name="contrasena">
             </div>
 
             <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
                 <input type="password" placeholder="Repetir Contraseña" name="contrasenavrf">
             </div>
 
             <button type="submit" name="submit" class="btn">Registrate</button>
-            <p class="btn-p">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-            <p class="btn-p">¿Ya tienes una cuenta?<a class="link" href="login.php"> Iniciar Sesion</a></p>
 
             <?php
                 if(isset($_GET["error"])){ /*Si hay un "error" en el url de la pagina voy a darle un mensaje de error */
@@ -64,6 +57,11 @@ include'header.php';
                 }
 
             ?>
+            
+            <p class="btn-p">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <p class="btn-p">¿Ya tienes una cuenta?<a class="link" href="login.php"> Iniciar Sesion</a></p>
+
+            
         </div>
     </div>    
 </form>
