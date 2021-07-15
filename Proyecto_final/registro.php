@@ -32,7 +32,7 @@ include'header.php';
             <button type="submit" name="submit" class="btn">Registrate</button>
 
             <?php
-                if(isset($_GET["error"])){ /*Si hay un "error" en el url de la pagina voy a darle un mensaje de error */
+                if(isset($_GET["error"])){ /*Si hay un "error" en el url de la pagina va a ejecutar el siguiente if y dependiendo el tipo de error va a saltar el mensaje */
                     if($_GET["error"] == "inputvacio"){
                         echo"<p class='error'>Llena todos los campos</p>";
                     }

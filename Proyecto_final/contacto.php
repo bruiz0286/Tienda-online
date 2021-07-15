@@ -4,31 +4,35 @@ include'header.php';
 ?>
 
     <main class="contenedor">
-        <h1>Contactanos</h1>
+        <h1>Manda tu giftcard!</h1>
         <section>
-            <form class="formulario--contacto" action="includes/contactoform.inc.php">
-                <fieldset>
-                    <legend>Contactanos llenando todos los campos</legend>
-                    
+            <form class="formulario--contacto" action="includes/contactoform.inc.php" method="POST">
+                <fieldset>                   
                 <div class="contenedor_campos">
                     <div class="campo">
-                        <label>Nombre</label>
+                        <label>Nombre Destinatario</label>
                         <input class="input_text" type="text" placeholder="Nombre" name="nombre">
                     </div>  
 
                     <div class="campo">
-                        <label>Asunto</label>
-                        <input class="input_text" type="text" placeholder="Asunto" name="asunto">
+                        <label>Telefono De contacto</label>
+                        <input class="input_text" type="text" placeholder="Telefono de contacto" name="telefono">
                     </div>
 
                     <div class="campo">
-                        <label>Correo</label>
-                        <input class="input_text" type="email" placeholder="Email" name="correo">
+                        <label>Direccion</label>
+                        <input class="input_text" type="text" placeholder="Direccion Destinatario" name="direccion">
                     </div>
 
                     <div class="campo">
-                        <label>Mensaje</label>
-                        <textarea class="input_text" name="mensaje"></textarea>
+                        <label>Monto</label>
+                        <select class="input_text" type="email" name="monto">
+                            <option disabled selected>-- Seleccionar Monto --</option>
+                            <option>$3000</option>
+                            <option>$6000</option>
+                            <option>$10000</option>
+                            <option>$20000</option>
+                        </select>
                     </div>
                 </div>
                     <div class="enviar">

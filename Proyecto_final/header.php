@@ -40,7 +40,7 @@
                 <li class="logo"><a href="index.php">Tienda Online</a></li>
                 <li class="item"><a href="nosotros.php">Nosotros</a></li>
                 <li class="item"><a href="producto.php">Productos</a></li>
-                <li class="item"><a href="contacto.php">Contacto</a></li>
+                <li class="item"><a href="contacto.php">Gift card</a></li>
                
                <?php
                 if (isset($_SESSION["usuariosId"])){
