@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -40,11 +39,11 @@
                 <li class="logo"><a href="index.php">Tienda Online</a></li>
                 <li class="item"><a href="nosotros.php">Nosotros</a></li>
                 <li class="item"><a href="producto.php">Productos</a></li>
-                <li class="item"><a href="contacto.php">Gift card</a></li>
+                <li class="item"><a href="contacto.php">Gift Cards</a></li>
                
                <?php
                 if (isset($_SESSION["usuariosId"])){
-                    echo "<p href='#' class='item usuario'><i class='fa fa-user' aria-hidden='true'></i>". $_SESSION["usuariosUid"] ."</p>";
+                    echo "<a href='perfil.php' class='item usuario'><i class='fa fa-user' aria-hidden='true'></i>". $_SESSION["usuariosUid"] ."</a>";
                     echo "<li class='item button'><a href='includes/logout.inc.php'>Cerrar sesion</a></li>";
                 }
 

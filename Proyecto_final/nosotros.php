@@ -34,12 +34,7 @@ include'header.php';
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus magni totam 
                 dicta maxime harum nisi voluptatibus! Illum quaerat volupt</p>
             </div><!--Bloque-->
-            <div class="bloque">
-                <img class="bloque__imagen" src="img/icono_2.png" alt="Para devs">
-                <h3 class="bloque__titulo">Para devs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus magni totam 
-                dicta maxime harum nisi voluptatibus! Illum quaerat volupt</p>
-            </div><!--Bloque-->
+            
             <div class="bloque">
                 <img class="bloque__imagen" src="img/icono_3.png" alt="Envio gratis">
                 <h3 class="bloque__titulo">Envio gratis</h3>

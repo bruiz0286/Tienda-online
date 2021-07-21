@@ -92,7 +92,7 @@ function crearUsuario($conn, $nombre, $correo, $usuario, $contrasena){
         exit();
     }
 
-    /* Hacer la contraseña ilegible para que sea mas segura */
+    /* Hacer la contraseña ilegible para que sea mas segura*/  //!
     $hashedPwd = password_hash($contrasena, PASSWORD_DEFAULT);
 
     mysqli_stmt_bind_param($stmt,"ssss",$nombre,$correo,$usuario,$hashedPwd); /*La contraseña pasa a ser ilegible para ser alamcenada en la bd */

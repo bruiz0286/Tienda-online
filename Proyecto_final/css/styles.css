@@ -458,14 +458,14 @@ input{
 /* Bloques */
 .bloques{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 1.5rem;
 }
 
 
 @media (min-width: 768px) {
     .bloques{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }   
 }
 
@@ -482,7 +482,7 @@ input{
 .formulario--contacto{
     background-color: var(--secundario);
     width: min(60rem,100%); /* Utilizar el valor mas pequeño de los dos parametros */
-    margin: 0 auto;
+    margin: 5rem auto 17rem auto;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -501,7 +501,7 @@ input{
 }
 
 .campo{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .campo label{
@@ -525,6 +525,9 @@ input{
     cursor: pointer;
     background-color:var(--primario);
     color: var(--blanco);
+    margin:2rem 0;
+    height: 4rem;
+    font-size: 2rem;
 }
 
 .enviar .boton:hover{
